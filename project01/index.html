@@ -21,11 +21,11 @@
                     st.pop();
                 }
                  
-                // remove the '[' from the stack
+                
                 st.pop();
                 let num = "";
                  
-                // remove the digits from the stack
+                
                 while (st.length > 0 && st[st.length - 1].charCodeAt() >= 48 && st[st.length - 1].charCodeAt() <= 57) {
                     num = st[st.length - 1] + num;
                     st.pop();
@@ -38,7 +38,7 @@
                     st.push(repeat);
             }
              
-            // if s[i] is not ']', simply push s[i] to the stack
+            
             else
                 st.push(s[i]);
         }
@@ -53,5 +53,5 @@
     let str = "3[b2[ca]]";
     document.write(decodeString(str));
  
-// This code is contributed by divyesh072019.
+
 </script>
